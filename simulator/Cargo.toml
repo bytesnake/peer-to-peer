@@ -1,0 +1,17 @@
+[package]
+name = "peer_simulator"
+version = "0.1.0"
+authors = ["Lorenz Schmidt <bytesnake@mailbox.org>"]
+
+[lib]
+name = "peersim"
+crate_type = ["dylib"]
+
+[dependencies]
+libc = "0.2"
+lazy_static = "*"
+priority-queue = "0.4"
+errno = "*"
+
+[dependencies.redhook]
+path = "redhook/"

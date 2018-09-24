@@ -1,0 +1,333 @@
+execve("./target/debug/gossip1", ["./target/debug/gossip1", "127.0.0.1", "8000"], 0x7ffe11c77228 /* 39 vars */) = 0
+brk(NULL)                               = 0x5580e3ab0000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd3ba88600) = -1 EINVAL (Das Argument ist ungültig)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (Datei oder Verzeichnis nicht gefunden)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=267908, ...}) = 0
+mmap(NULL, 267908, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f30913c6000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \20\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=14232, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f30913c4000
+mmap(NULL, 16528, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f30913bf000
+mmap(0x7f30913c0000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f30913c0000
+mmap(0x7f30913c1000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f30913c1000
+mmap(0x7f30913c2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f30913c2000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0  \0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=35088, ...}) = 0
+mmap(NULL, 39416, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f30913b5000
+mmap(0x7f30913b7000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f30913b7000
+mmap(0x7f30913bb000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f30913bb000
+mmap(0x7f30913bd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f30913bd000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340f\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=155408, ...}) = 0
+lseek(3, 808, SEEK_SET)                 = 808
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 131528, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3091394000
+mmap(0x7f309139a000, 61440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f309139a000
+mmap(0x7f30913a9000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f30913a9000
+mmap(0x7f30913af000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f30913af000
+mmap(0x7f30913b1000, 12744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f30913b1000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=867168, ...}) = 0
+mmap(NULL, 103152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f309137a000
+mprotect(0x7f309137d000, 86016, PROT_NONE) = 0
+mmap(0x7f309137d000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f309137d000
+mmap(0x7f309138e000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7f309138e000
+mmap(0x7f3091392000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f3091392000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000C\2\0\0\0\0\0"..., 832) = 832
+lseek(3, 792, SEEK_SET)                 = 792
+read(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\210o7\21\1\307=\311\366\263\256\202p\3777\335"..., 68) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2136840, ...}) = 0
+lseek(3, 792, SEEK_SET)                 = 792
+read(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\210o7\21\1\307=\311\366\263\256\202p\3777\335"..., 68) = 68
+lseek(3, 864, SEEK_SET)                 = 864
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 1848896, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f30911b6000
+mprotect(0x7f30911d8000, 1671168, PROT_NONE) = 0
+mmap(0x7f30911d8000, 1355776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f30911d8000
+mmap(0x7f3091323000, 311296, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16d000) = 0x7f3091323000
+mmap(0x7f3091370000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b9000) = 0x7f3091370000
+mmap(0x7f3091376000, 13888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3091376000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f30911b4000
+arch_prctl(ARCH_SET_FS, 0x7f30911b5480) = 0
+mprotect(0x7f3091370000, 16384, PROT_READ) = 0
+mprotect(0x7f3091392000, 4096, PROT_READ) = 0
+mprotect(0x7f30913af000, 4096, PROT_READ) = 0
+mprotect(0x7f30913bd000, 4096, PROT_READ) = 0
+mprotect(0x7f30913c2000, 4096, PROT_READ) = 0
+mprotect(0x5580e2a98000, 49152, PROT_READ) = 0
+mprotect(0x7f3091431000, 4096, PROT_READ) = 0
+munmap(0x7f30913c6000, 267908)          = 0
+set_tid_address(0x7f30911b5750)         = 15252
+set_robust_list(0x7f30911b5760, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f309139a130, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f30913a63c0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f309139a1d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f30913a63c0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+readlink("/etc/malloc.conf", 0x7ffd3ba87520, 4096) = -1 ENOENT (Datei oder Verzeichnis nicht gefunden)
+open("/proc/sys/vm/overcommit_memory", O_RDONLY) = 3
+read(3, "0", 1)                         = 1
+close(3)                                = 0
+brk(NULL)                               = 0x5580e3ab0000
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f3090fb4000
+munmap(0x7f3090fb4000, 2097152)         = 0
+mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f3090db5000
+munmap(0x7f3090db5000, 307200)          = 0
+munmap(0x7f3091000000, 1785856)         = 0
+openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+read(3, "0-3\n", 8192)                  = 4
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f30911ede00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f3090c00000
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "5580e260c000-5580e2898000 r-xp 0"..., 1024) = 1024
+read(3, "00 r--p 001b9000 fe:00 11537293 "..., 1024) = 1024
+read(3, " 00015000 fe:00 11537352        "..., 1024) = 1024
+read(3, " 00002000 fe:00 11537302        "..., 1024) = 1024
+close(3)                                = 0
+sched_getaffinity(15252, 32, [0, 1, 2, 3]) = 32
+rt_sigaction(SIGSEGV, {sa_handler=0x5580e27aa7b0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7f30913a63c0}, NULL, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x5580e27aa7b0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7f30913a63c0}, NULL, 8) = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3091406000
+sigaltstack({ss_sp=0x7f3091406000, ss_flags=0, ss_size=8192}, NULL) = 0
+socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_IP) = 3
+setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+bind(3, {sa_family=AF_INET, sin_port=htons(8000), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+listen(3, 1024)                         = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+getsockname(3, {sa_family=AF_INET, sin_port=htons(8000), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+write(1, "Start server with addr V4(127.0."..., 42) = 42
+getrandom("", 0, GRND_NONBLOCK)         = 0
+getrandom("\x15\x30\x3f\x0d\x92\xa9\xe4\x30\xf3\x15\x5c\xc3\xbc\xdf\xd8\x92", 16, GRND_NONBLOCK) = 16
+sched_getaffinity(0, 128, [0, 1, 2, 3]) = 40
+futex(0x7f30913c3048, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+epoll_create1(EPOLL_CLOEXEC)            = 4
+pipe2([5, 6], O_NONBLOCK|O_CLOEXEC)     = 0
+epoll_ctl(4, EPOLL_CTL_ADD, 5, {EPOLLIN|EPOLLET, {u32=4294967295, u64=18446744073709551615}}) = 0
+mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f30909ff000
+mprotect(0x7f3090a00000, 2097152, PROT_READ|PROT_WRITE) = 0
+clone(strace: Process 15253 attached
+child_stack=0x7f3090bfedb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f3090bff9d0, tls=0x7f3090bff700, child_tidptr=0x7f3090bff9d0) = 15253
+[pid 15253] set_robust_list(0x7f3090bff9e0, 24) = 0
+[pid 15253] sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+[pid 15253] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3091404000
+[pid 15253] sigaltstack({ss_sp=0x7f3091404000, ss_flags=0, ss_size=8192}, NULL) = 0
+[pid 15253] mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f30907ff000
+[pid 15253] munmap(0x7f30907ff000, 2097152) = 0
+[pid 15253] mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f3090600000
+[pid 15253] munmap(0x7f3090800000, 2093056) = 0
+[pid 15253] sched_getaffinity(15253, 32, [0, 1, 2, 3]) = 32
+[pid 15252] mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+[pid 15253] epoll_wait(4,  <unfinished ...>
+[pid 15252] <... mmap resumed> )        = 0x7f30903ff000
+[pid 15252] mprotect(0x7f3090400000, 2097152, PROT_READ|PROT_WRITE) = 0
+[pid 15252] clone(strace: Process 15254 attached
+child_stack=0x7f30905fedb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f30905ff9d0, tls=0x7f30905ff700, child_tidptr=0x7f30905ff9d0) = 15254
+[pid 15254] set_robust_list(0x7f30905ff9e0, 24) = 0
+[pid 15254] sigaltstack(NULL,  <unfinished ...>
+[pid 15252] futex(0x7f3090c24c98, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15254] <... sigaltstack resumed> {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+[pid 15254] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3091402000
+[pid 15254] sigaltstack({ss_sp=0x7f3091402000, ss_flags=0, ss_size=8192}, NULL) = 0
+[pid 15254] prctl(PR_SET_NAME, "tokio-runtime-w"...) = 0
+[pid 15254] mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f30901ff000
+[pid 15254] munmap(0x7f30901ff000, 2097152) = 0
+[pid 15254] mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f3090000000
+[pid 15254] munmap(0x7f3090200000, 2093056) = 0
+[pid 15254] sched_getaffinity(15254, 32, [0, 1, 2, 3]) = 32
+[pid 15254] mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f308fdff000
+[pid 15254] mprotect(0x7f308fe00000, 2097152, PROT_READ|PROT_WRITE) = 0
+[pid 15254] clone(strace: Process 15255 attached
+ <unfinished ...>
+[pid 15255] set_robust_list(0x7f308ffff9e0, 24 <unfinished ...>
+[pid 15254] <... clone resumed> child_stack=0x7f308fffedb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f308ffff9d0, tls=0x7f308ffff700, child_tidptr=0x7f308ffff9d0) = 15255
+[pid 15255] <... set_robust_list resumed> ) = 0
+[pid 15255] sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+[pid 15254] epoll_ctl(4, EPOLL_CTL_ADD, 3, {EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, {u32=0, u64=0}} <unfinished ...>
+[pid 15255] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+[pid 15254] <... epoll_ctl resumed> )   = 0
+[pid 15255] <... mmap resumed> )        = 0x7f3091400000
+[pid 15255] sigaltstack({ss_sp=0x7f3091400000, ss_flags=0, ss_size=8192}, NULL) = 0
+[pid 15255] prctl(PR_SET_NAME, "tokio-runtime-w"...) = 0
+[pid 15255] mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f308fbff000
+[pid 15255] munmap(0x7f308fbff000, 2097152) = 0
+[pid 15255] mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f308fa00000
+[pid 15255] munmap(0x7f308fc00000, 2093056) = 0
+[pid 15255] sched_getaffinity(15255, 32, [0, 1, 2, 3]) = 32
+[pid 15254] futex(0x7f3090c22448, FUTEX_WAIT_PRIVATE, 0, {tv_sec=1, tv_nsec=982307491} <unfinished ...>
+[pid 15255] futex(0x7f3090c223b8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15253] <... epoll_wait resumed> [{EPOLLIN, {u32=0, u64=0}}], 1024, -1) = 1
+[pid 15253] futex(0x7f3090c223b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 15255] <... futex resumed> )       = 0
+[pid 15255] futex(0x7f3090c22360, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15253] epoll_wait(4,  <unfinished ...>
+[pid 15255] <... futex resumed> )       = 0
+[pid 15255] futex(0x7f3090c22448, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 15254] <... futex resumed> )       = 0
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15255] accept4(3, {sa_family=AF_INET, sin_port=htons(34538), sin_addr=inet_addr("127.0.0.1")}, [128->16], SOCK_CLOEXEC) = 7
+[pid 15254] futex(0x7f3090c2244c, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=187191510} <unfinished ...>
+[pid 15255] ioctl(7, FIONBIO, [1])      = 0
+[pid 15255] getpeername(7, {sa_family=AF_INET, sin_port=htons(34538), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+[pid 15255] write(1, "New peer arrived from: Ok(V4(127"..., 47) = 47
+[pid 15255] epoll_ctl(4, EPOLL_CTL_ADD, 7, {EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, {u32=4194305, u64=4194305}}) = 0
+[pid 15253] <... epoll_wait resumed> [{EPOLLOUT, {u32=4194305, u64=4194305}}], 1024, -1) = 1
+[pid 15253] epoll_wait(4,  <unfinished ...>
+[pid 15255] accept4(3, 0x7f308fffa6f0, [128], SOCK_CLOEXEC) = -1 EAGAIN (Die Ressource ist zur Zeit nicht verfügbar)
+[pid 15253] <... epoll_wait resumed> [{EPOLLIN|EPOLLOUT, {u32=4194305, u64=4194305}}], 1024, -1) = 1
+[pid 15253] futex(0x7f3090c2244c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15254] <... futex resumed> )       = 0
+[pid 15255] futex(0x7f3090c223bc, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 15253] <... futex resumed> )       = 1
+[pid 15253] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15254] <... futex resumed> )       = 0
+[pid 15253] <... futex resumed> )       = 1
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15253] epoll_wait(4,  <unfinished ...>
+[pid 15254] <... futex resumed> )       = 0
+[pid 15254] futex(0x7f3090c223bc, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15255] <... futex resumed> )       = 0
+[pid 15254] <... futex resumed> )       = 1
+[pid 15255] futex(0x7f3090c22360, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15255] futex(0x7f3090c223b8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15254] readv(7, [{iov_base="\4 \0\0\0\0\t\0\0\0\0\0\0\000127.0.0.1\0\0\0\0\177\0\0\1A"..., iov_len=1024}], 1) = 34
+[pid 15254] readv(7, [{iov_base=0x7f3090033022, iov_len=2014}], 1) = -1 EAGAIN (Die Ressource ist zur Zeit nicht verfügbar)
+[pid 15254] write(1, "Connection established to V4(127"..., 65) = 65
+[pid 15254] sendto(7, "\4 \0\0\0\0\t\0\0\0\0\0\0\000127.0.0.1\0\0\0\0\177\0\0\1@"..., 41, MSG_NOSIGNAL, NULL, 0) = 41
+[pid 15254] futex(0x7f3090c223b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15255] <... futex resumed> )       = 0
+[pid 15254] <... futex resumed> )       = 1
+[pid 15255] futex(0x7f3090c22360, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 15254] futex(0x7f3090c22360, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15255] <... futex resumed> )       = -1 EAGAIN (Die Ressource ist zur Zeit nicht verfügbar)
+[pid 15254] <... futex resumed> )       = 0
+[pid 15255] futex(0x7f3090c22360, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15253] <... epoll_wait resumed> [{EPOLLIN|EPOLLOUT, {u32=4194305, u64=4194305}}], 1024, -1) = 1
+[pid 15253] mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+[pid 15255] futex(0x7f3090c223bc, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15253] <... mmap resumed> )        = 0x7f308f7ff000
+[pid 15253] mprotect(0x7f308f800000, 2097152, PROT_READ|PROT_WRITE) = 0
+[pid 15253] clone(strace: Process 15267 attached
+ <unfinished ...>
+[pid 15254] futex(0x7f3090c22448, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=184860823} <unfinished ...>
+[pid 15253] <... clone resumed> child_stack=0x7f308f9fedb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f308f9ff9d0, tls=0x7f308f9ff700, child_tidptr=0x7f308f9ff9d0) = 15267
+[pid 15267] set_robust_list(0x7f308f9ff9e0, 24 <unfinished ...>
+[pid 15253] epoll_wait(4,  <unfinished ...>
+[pid 15267] <... set_robust_list resumed> ) = 0
+[pid 15267] sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+[pid 15267] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f30913fe000
+[pid 15267] sigaltstack({ss_sp=0x7f30913fe000, ss_flags=0, ss_size=8192}, NULL) = 0
+[pid 15267] prctl(PR_SET_NAME, "tokio-runtime-w"...) = 0
+[pid 15267] mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f308f5ff000
+[pid 15267] munmap(0x7f308f5ff000, 2097152) = 0
+[pid 15267] mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f308f400000
+[pid 15267] munmap(0x7f308f600000, 2093056) = 0
+[pid 15267] sched_getaffinity(15267, 32, [0, 1, 2, 3]) = 32
+[pid 15267] futex(0x7f3090c22448, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 15254] <... futex resumed> )       = 0
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15267] readv(7,  <unfinished ...>
+[pid 15254] <... futex resumed> )       = 0
+[pid 15267] <... readv resumed> [{iov_base="\4\5\1\0\0\0\0", iov_len=2014}], 1) = 7
+[pid 15267] readv(7,  <unfinished ...>
+[pid 15254] futex(0x7f3090c2244c, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=183929505} <unfinished ...>
+[pid 15267] <... readv resumed> [{iov_base=0x7f3090033029, iov_len=2007}], 1) = -1 EAGAIN (Die Ressource ist zur Zeit nicht verfügbar)
+[pid 15267] futex(0x7f3090c2244c, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 15254] <... futex resumed> )       = 0
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15254] futex(0x7f3090c22448, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=183749845} <unfinished ...>
+[pid 15267] write(1, "Send peers: []\n", 15) = 15
+[pid 15267] sendto(7, "\4\r\1\0\0\0\1\0\0\0\0\0\0\0\0", 15, MSG_NOSIGNAL, NULL, 0) = 15
+[pid 15253] <... epoll_wait resumed> [{EPOLLIN|EPOLLOUT, {u32=4194305, u64=4194305}}], 1024, -1) = 1
+[pid 15253] futex(0x7f3090c22448, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15254] <... futex resumed> )       = 0
+[pid 15253] <... futex resumed> )       = 1
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 15253] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15254] <... futex resumed> )       = -1 EAGAIN (Die Ressource ist zur Zeit nicht verfügbar)
+[pid 15253] <... futex resumed> )       = 0
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15253] epoll_wait(4,  <unfinished ...>
+[pid 15254] <... futex resumed> )       = 0
+[pid 15254] futex(0x7f3090c223bc, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15267] readv(7,  <unfinished ...>
+[pid 15255] <... futex resumed> )       = 0
+[pid 15267] <... readv resumed> [{iov_base="\4\r\1\0\0\0\1\0\0\0\0\0\0\0\0", iov_len=2007}], 1) = 15
+[pid 15255] futex(0x7f3090c22360, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 15267] readv(7,  <unfinished ...>
+[pid 15254] <... futex resumed> )       = 1
+[pid 15267] <... readv resumed> [{iov_base=0x7f3090033038, iov_len=1992}], 1) = -1 EAGAIN (Die Ressource ist zur Zeit nicht verfügbar)
+[pid 15254] futex(0x7f3090c22360, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15267] mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+[pid 15255] <... futex resumed> )       = 0
+[pid 15254] <... futex resumed> )       = 1
+[pid 15267] <... mmap resumed> )        = 0x7f308f1ff000
+[pid 15255] futex(0x7f3090c22360, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15267] mprotect(0x7f308f200000, 2097152, PROT_READ|PROT_WRITE <unfinished ...>
+[pid 15254] futex(0x7f3090c2244c, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=183140959} <unfinished ...>
+[pid 15267] <... mprotect resumed> )    = 0
+[pid 15255] futex(0x7f3090c223b8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15267] clone(strace: Process 15270 attached
+ <unfinished ...>
+[pid 15270] set_robust_list(0x7f308f3ff9e0, 24 <unfinished ...>
+[pid 15267] <... clone resumed> child_stack=0x7f308f3fedb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f308f3ff9d0, tls=0x7f308f3ff700, child_tidptr=0x7f308f3ff9d0) = 15270
+[pid 15270] <... set_robust_list resumed> ) = 0
+[pid 15270] sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+[pid 15270] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f30913fc000
+[pid 15270] sigaltstack({ss_sp=0x7f30913fc000, ss_flags=0, ss_size=8192}, NULL) = 0
+[pid 15270] prctl(PR_SET_NAME, "tokio-runtime-w"...) = 0
+[pid 15270] mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f308efff000
+[pid 15270] munmap(0x7f308efff000, 2097152) = 0
+[pid 15270] mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f308ee00000
+[pid 15270] munmap(0x7f308f000000, 2093056) = 0
+[pid 15270] sched_getaffinity(15270, 32, [0, 1, 2, 3]) = 32
+[pid 15267] futex(0x7f3090c22328, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15270] futex(0x7f3090c22298, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15254] <... futex resumed> )       = -1 ETIMEDOUT (Die Wartezeit für die Verbindung ist abgelaufen)
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15254] futex(0x7f3090c2244c, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=15553133}) = -1 ETIMEDOUT (Die Wartezeit für die Verbindung ist abgelaufen)
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15254] futex(0x7f3090c22298, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15270] <... futex resumed> )       = 0
+[pid 15254] <... futex resumed> )       = 1
+[pid 15270] futex(0x7f3090c22240, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 15254] futex(0x7f3090c22240, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15270] <... futex resumed> )       = -1 EAGAIN (Die Ressource ist zur Zeit nicht verfügbar)
+[pid 15254] <... futex resumed> )       = 0
+[pid 15270] futex(0x7f3090c22240, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 15254] futex(0x7f3090c2244c, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15270] <... futex resumed> )       = 0
+[pid 15270] write(1, "Received peer list: []\n", 23) = 23
+[pid 15270] futex(0x7f3090c2244c, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 15254] <... futex resumed> )       = 0
+[pid 15254] futex(0x7f3090c223f0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15270] sendto(7, "\4\r\2\0\0\0\1\0\0\0\0\0\0\0\0", 15, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+[pid 15254] futex(0x7f3090c22448, FUTEX_WAIT_PRIVATE, 0, {tv_sec=1, tv_nsec=966648908} <unfinished ...>
+[pid 15270] <... sendto resumed> )      = 15
+[pid 15270] futex(0x7f3090c22328, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 15267] <... futex resumed> )       = 0
+[pid 15270] futex(0x7f3090c2229c, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 15267] futex(0x7f3090c222d0, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 15267] futex(0x7f3090c2232c, FUTEX_WAIT_PRIVATE, 0, NULLstrace: Process 15252 detached
+strace: Process 15253 detached
+strace: Process 15254 detached
+strace: Process 15255 detached
+strace: Process 15267 detached
+ <detached ...>
+strace: Process 15270 detached

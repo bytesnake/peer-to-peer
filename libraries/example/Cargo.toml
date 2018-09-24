@@ -1,0 +1,13 @@
+[package]
+name = "peer_simulator"
+version = "0.1.0"
+authors = ["Lorenz Schmidt <bytesnake@mailbox.org>"]
+
+[dependencies]
+gossip = { path = "../gossip1/" }
+rand = "*"
+tokio = "0.1"
+tokio-io = "0.1"
+mio = "0.6"
+futures = "0.1"
+clap = "2"
